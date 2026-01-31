@@ -1,8 +1,11 @@
 "use client";
 
-import { useFetch } from "@/shared/hooks/useFetch";
-import type { ScheduleItem } from "../types";
+import { schedules } from "../data";
 
 export function useSchedule() {
-  return useFetch<ScheduleItem[]>("/api/schedule");
+  return {
+    data: schedules,
+    loading: false,
+    error: null,
+  };
 }

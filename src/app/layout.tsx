@@ -1,13 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/shared/components/layout/Header";
 import Footer from "@/shared/components/layout/Footer";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "TPLE013 Class Website",
@@ -21,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased min-h-screen grid grid-rows-[auto_1fr_auto]`}>
+      <body className="font-sans antialiased min-h-screen grid grid-rows-[auto_1fr_auto]">
         <Header />
         <main>{children}</main>
         <Footer />

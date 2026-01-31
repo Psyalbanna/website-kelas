@@ -1,8 +1,12 @@
 "use client";
 
-import { useFetch } from "@/shared/hooks/useFetch";
+import { projects } from "../data";
 import type { Project } from "../types";
 
 export function useProjects() {
-  return useFetch<Project[]>("/api/projects");
+  return {
+    data: projects,
+    loading: false,
+    error: null,
+  };
 }

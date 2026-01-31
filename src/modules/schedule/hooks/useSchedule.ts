@@ -1,7 +1,6 @@
 "use client";
 
 import { schedules } from "../data";
-import type { ScheduleItem } from "../types";
 
 export function useSchedule() {
   return {

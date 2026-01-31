@@ -30,6 +30,6 @@ export const members: Member[] = [
   { id: "24", name: "Muhammad Zein Alvirzy", photo: "/avatars/zein-alvirzy.jpg", description: "", isOfficer: false },
   { id: "25", name: "Pasya Albanna", photo: "/avatars/Pasya.jpeg", description: "Tech Enthusiast | Web Developer | Cyber Security Enthusiast.", isOfficer: false },
   { id: "26", name: "Raditya Wisnu Herdinanto", photo: "/avatars/raditya-wisnu.jpg", description: "", isOfficer: false },
-  { id: "27", name: "Ramzi Althaf Putra Hermawan", photo: "/avatars/ramzi-althaf.jpg", description: "", isOfficer: false },
+  { id: "27", name: "Ramzi Althaf Putra Hermawan", photo: "/avatars/Ramzi.jpg", description: "", isOfficer: false },
   { id: "28", name: "Reza Aditya Firmansyah", photo: "/avatars/reza-aditya.jpg", description: "", isOfficer: false },
 ];

@@ -9,10 +9,22 @@ Website resmi kelas **TPLE013** - Universitas Pamulang. Dibangun dengan Next.js 
 
 ---
 
+## 🌐 Akses Website
+
+Website ini sudah di-deploy dan dapat diakses secara publik di:
+
+**[https://psyalbanna.github.io/website-kelas](https://psyalbanna.github.io/website-kelas)**
+
+Website akan otomatis di-update setiap kali ada perubahan yang di-push ke branch `master`.
+
+---
+
 ## 📋 Daftar Isi
 
+- [Akses Website](#-akses-website)
 - [Fitur](#-fitur)
 - [Cara Menjalankan](#-cara-menjalankan)
+- [Deployment](#-deployment)
 - [Struktur Direktori](#-struktur-direktori)
 - [Penjelasan Folder](#-penjelasan-folder)
 - [Cara Menambah Data](#-cara-menambah-data)
@@ -41,7 +53,7 @@ Pastikan sudah menginstall:
 
 1. **Clone atau download repository ini**
    ```bash
-   git clone https://github.com/tple013/website-kelas.git
+   git clone https://github.com/Psyalbanna/website-kelas.git
    cd website-kelas
    ```
 
@@ -67,6 +79,39 @@ Pastikan sudah menginstall:
 | `npm run build` | Build untuk production |
 | `npm run start` | Jalankan hasil build |
 | `npm run lint` | Cek kualitas kode |
+
+---
+
+## 🚀 Deployment
+
+Website ini menggunakan **GitHub Pages** untuk deployment otomatis.
+
+### Cara Kerja Deployment
+
+1. Setiap kali ada perubahan di-push ke branch `master`, GitHub Actions akan otomatis:
+   - Install dependencies
+   - Build website menjadi static files
+   - Deploy ke GitHub Pages
+
+2. Website akan tersedia di: `https://psyalbanna.github.io/website-kelas`
+
+3. Proses deployment bisa dipantau di tab **Actions** di repository GitHub
+
+### Manual Deployment
+
+Untuk melakukan deployment manual:
+
+1. Buka tab **Actions** di GitHub repository
+2. Pilih workflow **Deploy Next.js to GitHub Pages**
+3. Klik tombol **Run workflow**
+4. Pilih branch `master` dan klik **Run workflow**
+
+### Konfigurasi GitHub Pages
+
+Website ini sudah dikonfigurasi untuk GitHub Pages dengan:
+- **Source**: GitHub Actions
+- **Build Tool**: Next.js Static Export
+- **Output Directory**: `out/`
 
 ---
 

@@ -1,8 +1,11 @@
 "use client";
 
-import { useFetch } from "@/shared/hooks/useFetch";
-import type { Member } from "../types";
+import { members } from "../data";
 
 export function useMembers() {
-  return useFetch<Member[]>("/api/members");
+  return {
+    data: members,
+    loading: false,
+    error: null,
+  };
 }
